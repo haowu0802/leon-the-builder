@@ -10,7 +10,7 @@
 }
 
 * {
-    border: 1px solid red !important;
+    /*border: 1px solid red !important;*/
 }
 
 .color-gray {
@@ -22,5 +22,5 @@
 }
 
 .title-super {
-    font-size: 60px;
+    font-size: 40px;
 }
