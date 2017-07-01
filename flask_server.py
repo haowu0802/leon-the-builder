@@ -1,6 +1,6 @@
 import os  # for getting env vars
 
-from flask import Flask  # flask microframework
+from flask import Flask  # flask micro framework
 
 app = Flask(__name__)  # init flask application
 
@@ -8,7 +8,14 @@ app = Flask(__name__)  # init flask application
 # index
 @app.route("/")
 def hello():
-    return "Hello Flask!"
+    return "Leon the builder"
+
+
+# log form
+@app.route("/log")
+def log():
+    return "log form"
+
 
 # main
 if __name__ == '__main__':
