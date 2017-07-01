@@ -1,3 +1,23 @@
+/*
+ * General css
+ *
+ *  by Hao (Leon) Wu - LeonTheBuilder
+*/
+
+/*
+ * universal
+ */
+/* prevent these element from screen overflow */
+img, embed, object, video {
+  max-width: 100%;
+}
+/* minimum button/element size */
+nav a, button {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
