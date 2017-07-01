@@ -1,6 +1,7 @@
 import os  # for getting env vars
 
 from flask import Flask  # flask micro framework
+from flask import render_template  # template render
 
 app = Flask(__name__)  # init flask application
 
@@ -8,13 +9,13 @@ app = Flask(__name__)  # init flask application
 # index
 @app.route("/")
 def hello():
-    return "Leon the builder"
+    return render_template('index.html')  # index page
 
 
 # log form
 @app.route("/log")
 def log():
-    return "log form"
+    return render_template('log.html')  # log form page
 
 
 # main
