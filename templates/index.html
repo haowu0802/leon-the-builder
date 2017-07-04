@@ -23,15 +23,42 @@
   <div id="layout" class="pure-g">
 
     <div class="sidebar pure-u-1 pure-u-md-1-4">
+
       <div class="header">
         <h1 class="brand-title">Leon the Builder</h1>
         <h2 class="brand-tagline">Simply a developer</h2>
-        <img width="100" height="100" alt="Hao (Leon) Wu" class="post-avatar" src="{{ url_for('static', filename='leon-the-builder.jpg') }}">
+        <img width="100" height="100" alt="Hao (Leon) Wu" class="portrait" src="{{ url_for('static', filename='leon-the-builder.jpg') }}">
       </div>
+
     </div>
 
     <div class="content pure-u-1 pure-u-md-3-4">
-      RIGHT
+      <div class="posts">
+        <h1 class="content-subhead">My Toolbox</h1>
+        <div class="pure-u-1">
+          <img height="96" alt="Python" class="icon" src="{{ url_for('static', filename='python-logo.png') }}">
+          <img height="80" alt="Flask" class="icon" src="{{ url_for('static', filename='flask.png') }}">
+          <img height="64" alt="Django" class="icon-pad" src="{{ url_for('static', filename='django-logo-positive.png') }}">
+          <img height="48" alt="AirflowDataPipeline" class="icon" src="{{ url_for('static', filename='airflow.png') }}">
+          <img height="48" alt="Scrapy" class="icon" src="{{ url_for('static', filename='scrapylogo.png') }}">
+          <img height="32" alt="Anaconda" class="icon" src="{{ url_for('static', filename='anaconda.svg') }}">
+          <img height="32" alt="Pandas" class="icon" src="{{ url_for('static', filename='pandas_logo.png') }}">
+          <img height="32" alt="Matplotlib" class="icon" src="{{ url_for('static', filename='matplotlib.svg') }}">
+        </div>
+        <div class="pure-u-1">
+          <img height="80" alt="PHP" class="icon" src="{{ url_for('static', filename='PHP-logo.png') }}">
+          <img height="64" alt="Yii Framework" class="icon" src="{{ url_for('static', filename='yii.png') }}">
+          <img height="48" alt="Smarty" class="icon" src="{{ url_for('static', filename='smarty.jpg') }}">
+        </div>
+        <div class="pure-u-1">
+          <img height="128" alt="Postgresql" class="icon" src="{{ url_for('static', filename='postgresql.png') }}">
+          <img height="112" alt="MongoDB" class="icon" src="{{ url_for('static', filename='mongo.png') }}">
+          <img height="112" alt="Mysql" class="icon" src="{{ url_for('static', filename='mysql.png') }}">
+          <img height="112" alt="Redis" class="icon" src="{{ url_for('static', filename='redis.png') }}">
+        </div>
+
+
+      </div>
     </div>
 
 
