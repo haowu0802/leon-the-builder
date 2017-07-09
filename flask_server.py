@@ -2,20 +2,31 @@ import os  # for getting env vars
 
 from flask import Flask  # flask micro framework
 from flask import render_template  # template render
+from flask import request  # for rest apis
+from flask import flash  # flash messages
+from flask import url_for  # url maker
+from flask import redirect  # redirects
+
+import pymongo  # mongodb support
 
 app = Flask(__name__)  # init flask application
 
 
 # index
 @app.route("/")
-def hello():
+def index():
     return render_template('index.html')  # index page
 
 
 # log form
-@app.route("/log")
+@app.route("/log", methods=['GET', 'POST'])
 def log():
-    return render_template('log.html')  # log form page
+    if request.method == 'POST':
+        pass
+        # flash("log added" % item.name)  # add flash message to message queue
+        return redirect(url_for('log'))  # redirect to logs
+    else:
+        return render_template('log.html')  # log form page
 
 
 # main
