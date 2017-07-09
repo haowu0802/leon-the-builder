@@ -7,7 +7,7 @@ from flask import flash  # flash messages
 from flask import url_for  # url maker
 from flask import redirect  # redirects
 
-import pymongo  # mongodb support
+# import pymongo  # mongodb support
 
 app = Flask(__name__)  # init flask application
 
